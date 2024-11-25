@@ -1,0 +1,123 @@
+body{
+    color: #0f0f0f;
+    font-family: Arial,sans-serif;
+}
+
+.YouTube-page {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+}
+
+.video-card {
+    flex:calc(33.33% - 20px);
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.videobg1, .videobg2, .videobg3, .videobg4, .videobg5, .videobg6 { 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-size: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    box-sizing: border-box;
+    aspect-ratio: 2
+}
+
+.videobg1 { background-image: url('images/vj siddhu.jpg'); }
+.videobg2 { background-image: url('images/pdogg.jpg'); }
+.videobg3 { background-image: url('images/madan gowri.jpg'); }
+.videobg4 { background-image: url('images/song.jpg'); }
+.videobg5 { background-image: url('images/polimer newa.jpg'); }
+.videobg6 { background-image: url('images/irfan view.jpg'); }
+
+.image-detail {
+    margin-bottom: auto;
+    flex-direction: column;
+    gap: 10px;
+    display: none;
+}
+
+.time{
+     background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: bold;
+}
+.image-detail i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    color: white;
+}
+
+.videobg1:hover .image-detail,
+.videobg2:hover .image-detail,
+.videobg3:hover .image-detail,
+.videobg4:hover .image-detail,
+.videobg5:hover .image-detail,
+.videobg6:hover .image-detail {
+    display: flex;
+}
+
+
+
+.video-info {
+    padding: 10px;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    
+}
+
+.channel-logo {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.video-stats{
+     
+    
+    font-size: 14px;
+    margin-left: 55px;
+    color: #555;
+   
+}
+.channel-name {
+    margin-top: -10px;
+    font-size: 14px;
+    margin-left: 55px;
+    color: #555;
+
+}
+
+@media (max-width: 1024px) {
+    .video-card {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .video-card {
+        flex: 1 1 calc(100% - 20px);
+    }
+}
